@@ -1,0 +1,60 @@
+/* Apply background image to the entire page */
+body {
+  margin: 0;
+  height: 100vh;
+  background-size: cover;
+  background-color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.education-section {
+  padding: 1rem;
+  font-size: xx-large;
+  border-radius: 10px;
+  color: #007cff;
+  transform: translate(30px, -30px);
+  font-family: sans-serif;
+}
+.portal-section {
+  font-size: xx-large;
+  margin-top: -10rem;
+  padding: 1rem;
+  border-radius: 10px;
+  color: black;
+  transform: translate(30px, -30px);
+  font-family: sans-serif;
+}
+
+.home-illustration {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 55%;
+  transform: translate(-40px, 200px);
+  background-image: url('data/35020245_8262271.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.signin-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #007cff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: sans-serif;
+  cursor: pointer;
+  z-index: 10;
+}
