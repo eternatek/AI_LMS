@@ -22,7 +22,7 @@ function Header() {
       alignItems: 'center',
     }}>
       <div style={{flex: 1, textAlign: 'left'}}>
-        <Link to="/home" style={{textDecoration: 'none', color: 'black', fontSize: '1.2rem'}}>Home</Link>
+        <Link to="/" style={{textDecoration: 'none', color: 'black', fontSize: '1.2rem'}}>Home</Link>
       </div>
       <div style={{flex: 1, textAlign: 'center'}}>
         <Link to="/features" style={{textDecoration: 'none', color: 'black', fontSize: '1.2rem'}}>Features</Link>

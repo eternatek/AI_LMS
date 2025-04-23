@@ -1,4 +1,4 @@
-// Features.jsx
+
 import React from 'react';
 import './Features.css';
 import Header from './header';

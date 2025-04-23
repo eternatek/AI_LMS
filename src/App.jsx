@@ -1,4 +1,5 @@
 
+import Dashboard from './Dashboard';
 import Features from './Features';
 import Home from './Home';
 import Signin from './Signin';
@@ -13,10 +14,11 @@ function App() {
     <Router>
       <div>
         <Routes>
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/features" element={<Features />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/signin" element={<Signin/>} />
+          <Route path="/dashboard" element={<Dashboard/>} />
           
         </Routes>
       </div>
