@@ -1,15 +1,12 @@
-
-body {
+.home-container {
   margin: 0;
-  height: 100vh;
-  background-size: cover;
+  min-height: 400vh;
+  width: 100vw;
+  background-size: auto;
   background-color: white;
-  background-position: center;
   background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
+  display: block;
   position: relative;
-  overflow: hidden;
 }
 
 .education-section {
@@ -17,7 +14,7 @@ body {
   font-size: xx-large;
   border-radius: 10px;
   color: #007cff;
-  transform: translate(30px, -30px);
+  transform: translate(20px,-1200px);
   font-family: sans-serif;
 }
 .portal-section {
@@ -26,7 +23,7 @@ body {
   padding: 1rem;
   border-radius: 10px;
   color: black;
-  transform: translate(30px, -30px);
+  transform: translate(20px, -1200px);
   font-family: sans-serif;
 }
 
@@ -59,8 +56,114 @@ transform: translate(-10px, 12px);
   cursor: pointer;
   z-index: 10;
 }
+.signin-link{
+  color: white;
+}
 
+.signin-link:hover{
+  color: white;
+}
 .signin-button:hover {
-    color: white;
-    background-color: #0568d2;
+  color: white;
+  background-color: #0568d2;
+}
+.lets-go{
+  padding: 1rem;
+  font-size: large;
+  border-radius: 10px;
+  color: black;
+  transform: translate(400px, -1000px);
+  font-family: sans-serif;
+}
+.card1 {
+  background-color: #f5f5f5;
+  padding: 2rem;
+  border-radius: 10px;
+  height: 30vh;
+  color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 400px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: sans-serif;
+  transform: translate(150px, 1000px);
+  margin: 2rem;
+}
+.card2 {
+  background-color: #f5f5f5;
+  padding: 2rem;
+  border-radius: 10px;
+  height: 30vh;
+  color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 400px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: sans-serif;
+  transform: translate(800px, 653px);
+  margin: 2rem; 
+}
+.card3 {
+  background-color: #f5f5f5;
+  padding: 2rem;
+  border-radius: 10px;
+  height: 30vh;
+  color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 400px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: sans-serif;
+  transform: translate(150px, 700px);
+  margin: 2rem; 
+}
+.card4 {
+  background-color: #f5f5f5;
+  padding: 2rem;
+  border-radius: 10px;
+  height: 30vh;
+  color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 400px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: sans-serif;
+  transform: translate(800px, 354px);
+  margin: 2rem; 
+}
+.card1:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+.card2:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+.card3:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+.card4:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.get-started{
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  background-color:  #007cff;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: sans-serif;
+  margin-top: 3rem;
+}
+
+.get-started:hover {
+  background-color: #0568d2;
+  color: white;
+}
+
+.get-started-link{
+  color: white;
+}
+.get-started-link:hover{
+  color: white;
 }

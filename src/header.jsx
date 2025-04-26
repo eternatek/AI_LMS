@@ -28,7 +28,7 @@ function Header() {
         <Link to="/features" style={{textDecoration: 'none', color: 'black', fontSize: '1.2rem'}}>Features</Link>
       </div>
       <div style={{flex: 1, textAlign: 'right'}}>
-        <Link to="/pricing" style={{textDecoration: 'none', color: 'black', fontSize: '1.2rem'}}>Pricing</Link>
+        <Link to="/aiproducts" style={{textDecoration: 'none', color: 'black', fontSize: '1.2rem'}}>AI Products</Link>
       </div>
     </div>
   );

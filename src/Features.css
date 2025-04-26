@@ -1,9 +1,19 @@
 .features-container {
-    transform: translate(40px, -100px);
     padding: 2rem;
     text-align: center;
     margin: 2rem auto;
-    max-width: 800px;
+    background-color: white;
+  }
+
+  .whole{
+    margin: 0;
+    min-height: 400vh;
+    width: 100vw;
+    background-size: auto;
+    background-color: white;
+    background-repeat: no-repeat;
+    display: block;
+    position: relative;
   }
   
   .features-title {
@@ -11,6 +21,7 @@
     color: #007cff;
     margin-bottom: 1.5rem;
     font-weight: bold;
+    transform: translate(10px,100px);
   }
   
   .features-list {

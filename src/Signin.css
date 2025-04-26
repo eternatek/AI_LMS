@@ -1,10 +1,12 @@
 .signin-container {
-    transform: translate(200px, -50px);
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh; 
+  min-width: 94.5vw;
+  overflow: hidden; 
+  background-color: white;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 0 40px;
   gap: 50px;
@@ -19,7 +21,7 @@
 }
 
 .signin-illustration {
-transform: translate(20px, 20px);
+transform: translate(-20px, 20px);
   max-width: 700px;
   width: 100%;
 }
