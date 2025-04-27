@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import './header.css';
+import { NavLink } from 'react-router-dom';
 
 function Header() {
   return (
@@ -21,14 +22,14 @@ function Header() {
       justifyContent: 'space-between',
       alignItems: 'center',
     }}>
-      <div style={{flex: 1, textAlign: 'left'}}>
-        <Link to="/" style={{textDecoration: 'none', color: 'black', fontSize: '1.2rem'}}>Home</Link>
+      <div style={{flex: 1, textAlign: 'left',}}>
+        <NavLink to="/" className={({ isActive }) => isActive ? 'header-link-active' : 'header-link'}>Home</NavLink>
       </div>
       <div style={{flex: 1, textAlign: 'center'}}>
-        <Link to="/features" style={{textDecoration: 'none', color: 'black', fontSize: '1.2rem'}}>Features</Link>
+        <NavLink to="/features" className={({ isActive }) => isActive ? 'header-link-active' : 'header-link'}>Features</NavLink>
       </div>
       <div style={{flex: 1, textAlign: 'right'}}>
-        <Link to="/aiproducts" style={{textDecoration: 'none', color: 'black', fontSize: '1.2rem'}}>AI Products</Link>
+        <NavLink to="/aiproducts" className={({ isActive }) => isActive ? 'header-link-active' : 'header-link'}>AI Products</NavLink>
       </div>
     </div>
   );
