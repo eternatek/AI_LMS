@@ -7,7 +7,7 @@ function Home() {
     <div className="home-container">
         <Header/>
       <button className="signin-button">
-        <Link className="signin-link" to="/signin">Sign In</Link>
+        <Link className="signin-link" to="/signup">Sign Up</Link>
       </button> 
       <div className="home-illustration"></div>
       <div className="cards-section"></div>
