@@ -1,0 +1,21 @@
+.signin-container {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 100vh; 
+    background-color: white;
+  }
+  .signin-box{
+    transform: translate(850px,0px);
+  }
+  
+  .illuss{
+    position: absolute;
+    height: 100%;
+    width: 150%;
+    transform: translate(-700px, 20px);
+    background-image: url('data/Mobile login-cuate.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+  }

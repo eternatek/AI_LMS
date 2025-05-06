@@ -2,8 +2,8 @@ import React from 'react'
 
 function Dashboard() {
   return (
-    <div>
-      <h1>Hello</h1>
+    <div> 
+      <h1>Hello helooo</h1>
     </div>
   )
 }

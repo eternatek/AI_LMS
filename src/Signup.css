@@ -1,8 +1,21 @@
 .signup-container {
   display: flex;
-  justify-content: center;
   align-items: center;
   width: 100vw;
   height: 100vh; 
-  background-color: #f9f9f9; 
+  background-color: white;
+}
+.signup-box{
+  transform: translate(850px,0px);
+}
+
+.illus{
+  position: absolute;
+  height: 100%;
+  width: 150%;
+  transform: translate(-700px, 80px);
+  background-image: url('data/Mobile login-pana.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 0;
 }

@@ -12,6 +12,7 @@ export default function Signup() {
   return (
     <div className="signup-container">
       <div className="signup-box">
+        <div className='illus'></div>
         <SignUp afterSignUpUrl="/dashboard" />
       </div>
     </div>
