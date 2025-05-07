@@ -11,6 +11,7 @@ export default function Login() {
 
   return (
     <div className="signin-container">
+      <div className='logo-signin'></div>
       <div className="signin-box">
         <div className='illuss'></div>
         <SignIn afterSignInUrl="/dashboard" />

@@ -4,6 +4,7 @@ import Features from './Features';
 import Home from './Home';
 import Login from './Login';
 import Signup from './Signup'
+import DashboardIntermediate from './Dashboard-Intermediate';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function Pricing() {
@@ -20,7 +21,8 @@ function App() {
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/signup" element={<Signup/>} />
           <Route path="/signin" element={<Login/>} />
-          <Route path="/dashboard" element={<Dashboard/>} />     
+          <Route path="/dashboard" element={<Dashboard/>} />  
+          <Route path="/dashboard-intermediate" element={<DashboardIntermediate/>} />    
         </Routes>
       </div>
     </Router>

@@ -9,6 +9,7 @@ function Home() {
       <button className="signin-button">
         <Link className="signin-link" to="/signup">Sign Up</Link>
       </button> 
+      <div className='logo-home'></div>
       <div className="home-illustration"></div>
       <div className="cards-section"></div>
         <div className="card1">
@@ -75,11 +76,13 @@ function Home() {
       <footer className="footer">
         <div className="footer-content">
           <p className='copyright'>Copyright @ <a href="https://eternatek.in" target="_blank" rel="noopener noreferrer">etarnatek.in</a></p>
+          <div className='useful-links'>
+            <Link>Usefull Links</Link>
+          </div>
           <div className="footer-links">
-            <Link to="/privacy-policy">Privacy Policy</Link>
+          <Link to="/about-us">About Us</Link>
             <Link to="/terms-of-service">Terms of Service</Link>
-            <Link to="/about-us">About Us</Link>
-            <Link to="/contact-us">Contact Us</Link>
+            <Link to="/privacy-policy">Privacy Policy</Link>
           </div>
           <div className="product-links">
             <Link>Our Products</Link>
