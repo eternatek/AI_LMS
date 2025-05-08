@@ -7,6 +7,10 @@ height: 100vh;
   color: black;
   overflow: hidden;
 }
+.user-button{
+  position: absolute;
+  transform: translate(675px,40px);
+}
 .logo-dashboard{
     position: absolute;
     right: 0;
@@ -21,10 +25,10 @@ height: 100vh;
   
 }
 .head{
-    transform: translate(600px,30px);
+    transform: translate(610px,30px);
 }
 .text{
-    transform: translate(50px,150px);
+    transform: translate(60px,150px);
     font-size: large;
     text-align: center;
 }

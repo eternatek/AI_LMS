@@ -1,10 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import './Dashboard.css';
+import { UserButton } from '@clerk/clerk-react';
 
 function Dashboard() {
   return (
     <div className='dashboard'> 
+    <div className='user-button'><UserButton/></div>
     <div className='logo-dashboard'></div>
     <h1 className='head'>Dashboard</h1>
     <p className='text'>Our platform provides specialized learning for key educational and career stages: Intermediate (secondary education and entrance prep), Graduation (undergraduate studies and skill development), UPSC (civil services exam preparation), and various Government Exams. We offer tailored resources and content for each domain, ensuring focused learning relevant to specific academic and professional goals.</p>
