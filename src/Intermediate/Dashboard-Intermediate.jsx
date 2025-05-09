@@ -2,6 +2,7 @@ import React from 'react';
 import './Dashboard-Intermediate.css'; // make sure to create this CSS file
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
+import { useState } from 'react';
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -26,6 +27,7 @@ ChartJS.register(
 );
 
 function DashboardIntermediate() {
+  const [showNotification, setShowNotification] = useState(false);
   const data = {
     labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
     datasets: [
@@ -69,6 +71,20 @@ function DashboardIntermediate() {
   return (
     <div className="dashboard-intermediate">
       <div className='user-button-intermediate'><UserButton/></div>
+      <img
+  src="data/notification_1144756.png"
+  alt="Notifications"
+  className="notification-icon"
+  onClick={() => setShowNotification(prev => !prev)}
+  style={{ cursor: 'pointer', width: '24px', height: '24px' }}
+/>
+{showNotification && (
+  <div className="notification-dialog">
+    <div className="notification-content">
+      <p>No new notifications.</p>
+    </div>
+  </div>
+)}
       <div className='logo-intermediate'></div>
       <div className='options-intermediate'>
       <Link

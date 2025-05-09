@@ -2,11 +2,28 @@ import React from 'react'
 import './Take-Exam-Intermediate.css';
 import { Link, useLocation } from 'react-router-dom';
 import { UserButton } from '@clerk/clerk-react';
+import { useState } from 'react';
 
 function HistoryIntermediate() {
+    const [showNotification, setShowNotification] = useState(false);
   return (
     <div className="dashboard-intermediate">
         <div className='user-button-intermediate'><UserButton/></div>
+        <img
+  src="data/notification_1144756.png"
+  alt="Notifications"
+  className="notification-icon"
+  onClick={() => setShowNotification(prev => !prev)}
+  style={{ cursor: 'pointer', width: '24px', height: '24px' }}
+/>
+{showNotification && (
+  <div className="notification-dialog">
+    <div className="notification-content">
+      <p>No new notifications.</p>
+    </div>
+  </div>
+)}
+        
     <div className='logo-intermediate'></div>
     <div className='options-intermediate'>
     <Link
