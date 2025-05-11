@@ -1,26 +1,25 @@
 import React from 'react';
-import './Dashboard-Intermediate.css'; // make sure to create this CSS file
+import './Dashboard-Intermediate.css'; 
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import { useState } from 'react';
+import { weeklyTopics, getWeeklyTopic } from '../utils/topicRotation';
 import {
   Chart as ChartJS,
   CategoryScale,
   LinearScale,
-  PointElement,
-  LineElement,
+  BarElement,
   Title,
   Tooltip,
   Legend
 } from 'chart.js';
-import { Line } from 'react-chartjs-2';
+import { Bar } from 'react-chartjs-2';
 import { UserButton } from '@clerk/clerk-react';
 
 ChartJS.register(
   CategoryScale,
   LinearScale,
-  PointElement,
-  LineElement, 
+  BarElement,
   Title,
   Tooltip,
   Legend
@@ -33,24 +32,18 @@ function DashboardIntermediate() {
     datasets: [
       {
         label: 'Physics',
-        data: [70, 75, 80, 85],
-        fill: false,
-        borderColor: '#00e6dc',
-        tension: 0.4,
+        data: [30, 45, 50, 85],
+        backgroundColor: '#00e6dc',
       },
       {
         label: 'Chemistry',
-        data: [60, 65, 70, 72],
-        fill: false,
-        borderColor: '#5488fe',
-        tension: 0.4,
+        data: [60, 65, 50, 42],
+        backgroundColor: '#5488fe',
       },
       {
         label: 'Maths',
-        data: [80, 85, 88, 90],
-        fill: false,
-        borderColor: '#ff9772',
-        tension: 0.4,
+        data: [80, 85, 78, 80],
+        backgroundColor: '#ff9772',
       },
     ],
   };
@@ -125,12 +118,76 @@ className={`sidebar-link ${location.pathname === '/history-intermediate' ? 'acti
       <div className='history-intermediate-icon'></div>
       <div className="rounded-container">
       <div className="subject-cards">
-  <Link to="/physics" className="subject-card physics-card">Physics</Link>
-  <Link to="/chemistry" className="subject-card chemistry-card">Chemistry</Link>
-  <Link to="/maths" className="subject-card maths-card">Maths</Link>
+  <Link to="/physics" className="subject-card physics-card">
+    <div className="card-content">
+      <div>Physics</div>
+      <div className="jee-mains">Jee mains: 2/45</div>
+      <div className="jee-advance">Jee advance: 3/68</div>
+    </div>
+  </Link>
+  <Link to="/chemistry" className="subject-card chemistry-card">
+    <div className="card-content">
+      <div>Chemistry</div>
+      <div className="jee-mains">Jee mains: 2/45</div>
+      <div className="jee-advance">Jee advance: 3/68</div>
+    </div>
+  </Link>
+  <Link to="/maths" className="subject-card maths-card">
+    <div className="card-content">
+      <div>Maths</div>
+      <div className="jee-mains">Jee mains: 2/45</div>
+      <div className="jee-advance">Jee advance: 3/68</div>
+    </div>
+  </Link>
 </div>
 <div className="graph-container">
-          <Line data={data} options={options} />
+          <Bar data={data} options={options} />
+        </div>
+        <div className="recommended-courses-section">
+          <h3>Recommended Courses</h3>
+          <div className="course-cards">
+            <Link to="/ad1" className="course-card-1">
+              <h4>Advertisment 1</h4>
+              <p>description</p>
+            </Link>
+            <Link to="/ad2" className="course-card-2">
+              <h4>Advertisment 2</h4>
+              <p>description</p>
+            </Link>
+            <Link to="/ad3" className="course-card-3">
+              <h4>Advertisment 3</h4>
+              <p>description</p>
+            </Link>
+          </div>
+        </div>
+      <div className="weekly-challenge-container">
+        <h3>Weekly Challenge</h3>
+        <div className="subject-container">
+          <div className="subject">
+            <h4>Maths</h4>
+            <div className='sub-day'>
+             On Monday<br />
+            <p>Topic: {getWeeklyTopic(weeklyTopics.Maths)}</p>
+            </div>
+            <button>Start Test</button>
+          </div>
+          <div className="subject">
+            <h4>Physics</h4>
+            <div className='sub-day'>
+             On Wednesday<br />
+            <p>Topic: {getWeeklyTopic(weeklyTopics.Physics)}</p>
+            </div>
+            <button>Start Test</button>
+          </div>
+          <div className="subject">
+            <h4>Chemistry</h4>
+            <div className='sub-day'>
+               On Friday<br />
+            <p>Topic: {getWeeklyTopic(weeklyTopics.Chemistry)}</p>
+            </div>
+            <button>Start Test</button>
+          </div>
+          </div>
         </div>
       </div>
     </div>
