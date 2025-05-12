@@ -31,7 +31,7 @@ function App() {
           <Route path="/dashboard" element={<Dashboard/>} />  
           <Route path="/dashboard-intermediate" element={<DashboardIntermediate/>} />
           <Route path="/take-exam-intermediate" element={<TakeExamIntermediate/>} /> 
-          <Route path="/leaderboard-intermediate" element={<LeaderboardIntermediate/>} /> 
+           <Route path="/leaderboard-intermediate" element={<LeaderboardIntermediate/>} /> 
           <Route path="/events-intermediate" element={<EventsIntermediate/>} />
           <Route path="/rewards-intermediate" element={<RewardsIntermediate/>} />  
           <Route path="/history-intermediate" element={<HistoryIntermediate/>} /> 

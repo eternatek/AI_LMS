@@ -2,13 +2,36 @@ import React from 'react'
 import './Take-Exam-Intermediate.css';
 import { Link, useLocation } from 'react-router-dom';
 import { UserButton } from '@clerk/clerk-react';
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
+import { getUpdatedStreak } from '../utils/streak';
 
 function TakeExamIntermediate() {
     const [showNotification, setShowNotification] = useState(false);
+    const [streakCount, setStreakCount] = useState(0);
+    useEffect(() => {
+      setStreakCount(getUpdatedStreak());
+    }, []);
   return (
     <div className="dashboard-intermediate">
         <div className='user-button-intermediate'><UserButton/></div>
+        <img
+      src='data/coins_7928197.png'
+      alt='Coin'
+      className='intermediate-coin-icon'
+      style={{ cursor: 'pointer', width: '24px', height: '24px' }}
+      />
+      <div className='intermediate-coin-count'>
+        10
+      </div>
+        <img
+    src="data/flame_3916980.png"
+    alt="Streak"
+    className="streak-icon"
+    style={{ cursor: 'pointer', width: '24px', height: '24px' }}
+  />
+  <div className="streak-count">
+        {streakCount}
+      </div>
         <img
   src="data/notification_1144756.png"
   alt="Notifications"

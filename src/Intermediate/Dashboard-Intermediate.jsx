@@ -2,7 +2,8 @@ import React from 'react';
 import './Dashboard-Intermediate.css'; 
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { getUpdatedStreak } from '../utils/streak';
 import { weeklyTopics, getWeeklyTopic } from '../utils/topicRotation';
 import {
   Chart as ChartJS,
@@ -25,8 +26,13 @@ ChartJS.register(
   Legend
 );
 
+
 function DashboardIntermediate() {
   const [showNotification, setShowNotification] = useState(false);
+  const [streakCount, setStreakCount] = useState(0);
+  useEffect(() => {
+    setStreakCount(getUpdatedStreak());
+  }, []);
   const data = {
     labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
     datasets: [
@@ -65,11 +71,30 @@ function DashboardIntermediate() {
     <div className="dashboard-intermediate">
       <div className='user-button-intermediate'><UserButton/></div>
       <img
+      src='data/coins_7928197.png'
+      alt='Coin'
+      className='intermediate-coin-icon'
+      style={{ cursor: 'pointer', width: '24px', height: '24px' }}
+      />
+      <div className='intermediate-coin-count'>
+        10
+      </div>
+
+      <img
+    src="data/flame_3916980.png"
+    alt="Streak"
+    className="streak-icon"
+    style={{ cursor: 'pointer', width: '24px', height: '24px' }}
+  />
+  <div className="streak-count">
+        {streakCount}
+      </div>
+      <img
   src="data/notification_1144756.png"
   alt="Notifications"
   className="notification-icon"
   onClick={() => setShowNotification(prev => !prev)}
-  style={{ cursor: 'pointer', width: '24px', height: '24px' }}
+  style={{ cursor: 'pointer', width: '24px', height: '24px'}}
 />
 {showNotification && (
   <div className="notification-dialog">
