@@ -1,10 +1,10 @@
 import React from 'react'
-import './Take-Exam-Intermediate.css';
+import './Store-Intermediate.css';
 import { Link, useLocation } from 'react-router-dom';
 import { UserButton } from '@clerk/clerk-react';
 import { useState } from 'react';
 
-function RewardsIntermediate() {
+function StoreIntermediate() {
     const [showNotification, setShowNotification] = useState(false);
   return (
     <div className="dashboard-intermediate">
@@ -72,4 +72,4 @@ className={`sidebar-link ${location.pathname === '/store-intermediate' ? 'active
   )
 }
 
-export default RewardsIntermediate
+export default StoreIntermediate

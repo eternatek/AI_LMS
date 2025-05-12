@@ -12,6 +12,7 @@ import EventsIntermediate from './Intermediate/Events-Intermediate';
 import RewardsIntermediate from './Intermediate/Rewards-Intermediate';
 import HistoryIntermediate from './Intermediate/History-Intermediate';
 import SignOutPage from './Signout';
+import StoreIntermediate from './Intermediate/Store-Intermediate';
 
 function Pricing() {
   return <h1 className="page-content">Pricing Page</h1>;
@@ -33,7 +34,8 @@ function App() {
           <Route path="/leaderboard-intermediate" element={<LeaderboardIntermediate/>} /> 
           <Route path="/events-intermediate" element={<EventsIntermediate/>} />
           <Route path="/rewards-intermediate" element={<RewardsIntermediate/>} />  
-          <Route path="/history-intermediate" element={<HistoryIntermediate/>} />   
+          <Route path="/history-intermediate" element={<HistoryIntermediate/>} /> 
+          <Route path="/store-intermediate" element={<StoreIntermediate/>} /> 
           <Route path="/signout" element={<SignOutPage/>} />             
 
         </Routes>

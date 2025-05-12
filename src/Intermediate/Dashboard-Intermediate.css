@@ -61,7 +61,7 @@
   color: black;
   text-decoration: none;
   font-size: larger;
-  transform: translate(80px, 151px);
+  transform: translate(80px, 110px);
 }
 
 .log-out-intermediate{
@@ -94,7 +94,7 @@
   top: 0;
   height: 100%;
   width: 1.5%;
-  transform: translate(-1405px, 163px);
+  transform: translate(-1405px, 123px);
   background-image: url('data/overview_13794240.png');
   background-size: contain;
   background-repeat: no-repeat;
@@ -106,7 +106,7 @@
   top: 0;
   height: 100%;
   width: 1.5%;
-  transform: translate(-1405px, 240px);
+  transform: translate(-1405px, 200px);
   background-image: url('data/task-checklist_18620852.png');
   background-size: contain;
   background-repeat: no-repeat;
@@ -118,7 +118,7 @@
   top: 0;
   height: 100%;
   width: 1.5%;
-  transform: translate(-1405px, 313px);
+  transform: translate(-1405px, 273px);
   background-image: url('data/ranking-podium_13085491.png');
   background-size: contain;
   background-repeat: no-repeat;
@@ -130,7 +130,7 @@
   top: 0;
   height: 100%;
   width: 1.5%;
-  transform: translate(-1405px, 391px);
+  transform: translate(-1405px, 351px);
   background-image: url('data/calendar-day_9586165.png');
   background-size: contain;
   background-repeat: no-repeat;
@@ -142,7 +142,7 @@
   top: 0;
   height: 100%;
   width: 1.5%;
-  transform: translate(-1405px, 468px);
+  transform: translate(-1405px, 428px);
   background-image: url('data/medal_12617155.png');
   background-size: contain;
   background-repeat: no-repeat;
@@ -154,8 +154,20 @@
   top: 0;
   height: 100%;
   width: 1.5%;
-  transform: translate(-1405px, 546px);
+  transform: translate(-1405px, 506px);
   background-image: url('data/time-past_3917296.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+.store-intermediate-icon{
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 1.5%;
+  transform: translate(-1405px, 585px);
+  background-image: url('data/shopping-cart_3916598.png');
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 0;

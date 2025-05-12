@@ -51,6 +51,9 @@ className={`sidebar-link ${location.pathname === '/rewards-intermediate' ? 'acti
 <Link to="/history-intermediate"
 className={`sidebar-link ${location.pathname === '/history-intermediate' ? 'active' : ''}`}>
     History</Link>
+    <Link to="/store-intermediate"
+className={`sidebar-link ${location.pathname === '/store-intermediate' ? 'active' : ''}`}>
+    Store</Link> 
 </div>
 <div className='log-out-intermediate'>
   <Link to="/">Sign Out</Link>
@@ -62,6 +65,7 @@ className={`sidebar-link ${location.pathname === '/history-intermediate' ? 'acti
     <div className='event-intermediate-icon'></div>
     <div className='rewards-intermediate-icon'></div>
     <div className='history-intermediate-icon'></div>
+    <div className='store-intermediate-icon'></div>
     <div className="rounded-container">
         </div>
         </div>
