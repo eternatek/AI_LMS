@@ -1,0 +1,13 @@
+fastapi==0.115.12
+uvicorn==0.30.6 
+pydantic==2.11.3 
+sqlalchemy==2.0.40
+psycopg2-binary==2.9.10
+psycopg2 == 2.9.10
+llama-index==0.11.17 
+crewai==0.10.0
+chromadb==0.4.15
+sentence-transformers==3.1.1 
+groq==0.23.1 
+python-dotenv==1.1.0
+streamlit == 1.44.1
