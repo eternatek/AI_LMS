@@ -1,0 +1,331 @@
+.leaderboard-container-I2 {
+    font-family: Arial, sans-serif;
+    background-color: #f8fafc;
+    width: 100vw;
+    height: 125vh;
+    position: absolute;
+    top: 0px;
+  }
+  
+  .leaderboard-sidebar-I2 {
+    position: absolute;
+    width: 275px;
+    height: 125vh;
+    background-color: #f8fafc;
+    color: black;
+    top: 0;
+    border-right: 1px solid #d2d7dc;
+  }
+  /* .selected-sidebar-option-I2 {
+    border: 2px solid #0287ff;
+    border-radius: 6px;
+    background-color: #e6f0ff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  } */
+
+.leaderboard-divider-I2 {
+    border-top: 1px solid #d2d7dc;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+  }
+  .leaderboard-sidebar-divider-I2 {
+    border-top: 1px solid #d2d7dc;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+  }
+  
+.leaderboard-logo-I2{
+    position: absolute;
+    left: -15px;
+    top: -120px;
+    height: 100%;
+    width: 120%;
+    background-image: url('data/WhatsApp_Image_2025-05-07_at_19.27.01-removebg-preview.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+.dashboard-icon-I2{
+    position: absolute;
+    left: 55px;
+    top: 21px;
+    height: 100%;
+    width: 11%;
+    background-image: url('data-2/house-user.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+.take-exam-icon-I2{
+    position: absolute;
+    left: 55px;
+    top: 71px;
+    height: 100%;
+    width: 11%;
+    background-image: url('data-2/book-alt.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+.recent-exam-icon-I2{
+    position: absolute;
+    left: 55px;
+    top: 121px;
+    height: 100%;
+    width: 11%;
+    background-image: url('data-2/document.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+.analytics-icon-I2{
+    position: absolute;
+    left: 55px;
+    top: 169px;
+    height: 100%;
+    width: 11%;
+    background-image: url('data-2/chart-simple.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+.leaderboard-icon-I2{
+    position: absolute;
+    left: 55px;
+    top: 217px;
+    height: 100%;
+    width: 11%;
+    background-image: url('data-2/trophy.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+.community-icon-I2{
+    position: absolute;
+    left: 55px;
+    top: 267px;
+    height: 100%;
+    width: 11%;
+    background-image: url('data-2/messages.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+.rewards-icon-I2{
+    position: absolute;
+    left: 55px;
+    top: 314px;
+    height: 100%;
+    width: 11%;
+    background-image: url('data-2/badge.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+.store-icon-I2{
+    position: absolute;
+    left: 55px;
+    top: 364px;
+    height: 100%;
+    width: 11%;
+    background-image: url('data-2/shop.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+  .leaderboard-sidebar-list-I2 {
+    list-style: none;
+    position: absolute;
+    top: 60px;
+    color: black;
+  }
+  
+  .leaderboard-sidebar-list-I2 li {
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 60px;
+  }
+  
+  .leaderboard-sidebar-list-I2 li:hover .dashboard-icon-I2{
+    color: black;
+    background-image: url('data-2/house-user_11270109.png');
+  }
+  .leaderboard-sidebar-list-I2 li:hover .take-exam-icon-I2{
+    color: black;
+    background-image: url('data-2/book-alt_3914149.png');
+  }
+  .leaderboard-sidebar-list-I2 li:hover .recent-exam-icon-I2{
+    color: black;
+    background-image: url('data-2/document_3914193.png');
+  }
+  .leaderboard-sidebar-list-I2 li:hover .analytics-icon-I2{
+    color: black;
+    background-image: url('data-2/chart-simple_9795345.png');
+  }
+  .leaderboard-sidebar-list-I2 li:hover .leaderboard-icon-I2{
+    color: black;
+    background-image: url('data-2/trophy_3914267.png');
+  }
+  .leaderboard-sidebar-list-I2 li:hover .community-icon-I2{
+    color: black;
+    background-image: url('data-2/messages_9821623.png');
+  }
+  .leaderboard-sidebar-list-I2 li:hover .rewards-icon-I2{
+    color: black;
+    background-image: url('data-2/badge_3914133.png');
+  }
+  .leaderboard-sidebar-list-I2 li:hover .store-icon-I2{
+    color: black;
+    background-image: url('data-2/shop_3916657.png');
+  }
+
+  .leaderboard-sidebar-list-I2 li a {
+    color: #676f7a;
+    font-size: larger;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .leaderboard-sidebar-list-I2 li a:hover {
+    color: black;
+  }
+
+  .head-leaderboard-I2{
+    position: absolute;
+    left: 300px;
+    top: 50px;
+  }
+  .head-leaderboard-I2 h1{
+    position: absolute;
+    width: 300px;
+    font-size: 28px;
+    color: black;
+  }
+  .head-leaderboard-I2 p{
+    position: absolute;
+    width: 600px;
+    top: 40px;
+    font-size: 18px;
+    color: #676f7a;
+    font-weight:500;
+  }
+  .exam-selection-leaderboard-I2{
+    position: absolute;
+    width: 1100px;
+    height: 50px;
+    background-color: #f1f5f9;
+    top: 170px;
+    left: 300px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    border-radius: 10px;
+  }
+.select-1-leaderboard-I2{
+    position: relative;
+    color: #676f7a;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    top: 4px;
+    padding-top: 7px;
+    padding-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.select-1-leaderboard-I2.selected {
+    position: relative;
+    background-color: #f8fafc; 
+    color: black;
+    border-radius: 10px;
+    height: 30px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  }
+  .subject-selection-leaderboard-I2{
+    position: absolute;
+    top: 220px;
+    left: 280px;
+    width: 400px;
+    height: 100px;
+    background-color: #f8fafc;
+  }
+  .subject-selection-leaderboard-I2 h1{
+    font-size: 15px;
+    color: black;
+    position: absolute;
+    top: 15px;
+    left: 30px;
+  }
+  .subject-dropdown-1-I2{
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    width: 350px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #f1f5f9;
+    padding-left: 10px;
+    border: 1px solid #e1e2e2;
+    color: black;
+  }
+  .state-selection-leaderboard-I2{
+    position: absolute;
+    top: 220px;
+    left: 670px;
+    width: 400px;
+    height: 100px;
+    background-color: #f8fafc;
+  }
+
+  .state-selection-leaderboard-I2 h1{
+    font-size: 15px;
+    color: black;
+    position: absolute;
+    top: 15px;
+    left: 30px;
+  }
+  .state-dropdown-I2{
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    width: 350px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #f1f5f9;
+    padding-left: 10px;
+    border: 1px solid #e1e2e2;
+    color: black;
+  }
+  .uni-selection-leaderboard-I2{
+    position: absolute;
+    top: 220px;
+    left: 1060px;
+    width: 400px;
+    height: 100px;
+    background-color: #f8fafc;
+  }
+
+  .uni-selection-leaderboard-I2 h1{
+    font-size: 15px;
+    color: black;
+    position: absolute;
+    top: 15px;
+    left: 30px;
+  }
+  .uni-dropdown-I2{
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    width: 350px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #f1f5f9;
+    padding-left: 10px;
+    border: 1px solid #e1e2e2;
+    color: black;
+  }

@@ -1,0 +1,769 @@
+.rewards-container-I2 {
+    font-family: Arial, sans-serif;
+    background-color: #f8fafc;
+    width: 100vw;
+    height: 125vh;
+    position: absolute;
+    top: 0px;
+  }
+  
+  .rewards-sidebar-I2 {
+    position: absolute;
+    width: 275px;
+    height: 125vh;
+    background-color: #f8fafc;
+    color: black;
+    top: 0;
+    border-right: 1px solid #d2d7dc;
+  }
+  /* .selected-sidebar-option-I2 {
+    border: 2px solid #0287ff;
+    border-radius: 6px;
+    background-color: #e6f0ff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  } */
+
+.rewards-divider-I2 {
+    border-top: 1px solid #d2d7dc;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+  }
+  .rewards-sidebar-divider-I2 {
+    border-top: 1px solid #d2d7dc;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+  }
+  
+.rewards-logo-I2{
+    position: absolute;
+    left: -15px;
+    top: -120px;
+    height: 100%;
+    width: 120%;
+    background-image: url('data/WhatsApp_Image_2025-05-07_at_19.27.01-removebg-preview.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+.dashboard-icon-I2{
+    position: absolute;
+    left: 55px;
+    top: 21px;
+    height: 100%;
+    width: 11%;
+    background-image: url('data-2/house-user.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+.take-exam-icon-I2{
+    position: absolute;
+    left: 55px;
+    top: 71px;
+    height: 100%;
+    width: 11%;
+    background-image: url('data-2/book-alt.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+.recent-exam-icon-I2{
+    position: absolute;
+    left: 55px;
+    top: 121px;
+    height: 100%;
+    width: 11%;
+    background-image: url('data-2/document.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+.analytics-icon-I2{
+    position: absolute;
+    left: 55px;
+    top: 169px;
+    height: 100%;
+    width: 11%;
+    background-image: url('data-2/chart-simple.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+.leaderboard-icon-I2{
+    position: absolute;
+    left: 55px;
+    top: 217px;
+    height: 100%;
+    width: 11%;
+    background-image: url('data-2/trophy.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+.community-icon-I2{
+    position: absolute;
+    left: 55px;
+    top: 267px;
+    height: 100%;
+    width: 11%;
+    background-image: url('data-2/messages.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+.rewards-icon-I2{
+    position: absolute;
+    left: 55px;
+    top: 314px;
+    height: 100%;
+    width: 11%;
+    background-image: url('data-2/badge.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+.store-icon-I2{
+    position: absolute;
+    left: 55px;
+    top: 364px;
+    height: 100%;
+    width: 11%;
+    background-image: url('data-2/shop.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+  .rewards-sidebar-list-I2 {
+    list-style: none;
+    position: absolute;
+    top: 60px;
+    color: black;
+  }
+  
+  .rewards-sidebar-list-I2 li {
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 60px;
+  }
+  
+  .rewards-sidebar-list-I2 li:hover .dashboard-icon-I2{
+    color: black;
+    background-image: url('data-2/house-user_11270109.png');
+  }
+  .rewards-sidebar-list-I2 li:hover .take-exam-icon-I2{
+    color: black;
+    background-image: url('data-2/book-alt_3914149.png');
+  }
+  .rewards-sidebar-list-I2 li:hover .recent-exam-icon-I2{
+    color: black;
+    background-image: url('data-2/document_3914193.png');
+  }
+  .rewards-sidebar-list-I2 li:hover .analytics-icon-I2{
+    color: black;
+    background-image: url('data-2/chart-simple_9795345.png');
+  }
+  .rewards-sidebar-list-I2 li:hover .leaderboard-icon-I2{
+    color: black;
+    background-image: url('data-2/trophy_3914267.png');
+  }
+  .rewards-sidebar-list-I2 li:hover .community-icon-I2{
+    color: black;
+    background-image: url('data-2/messages_9821623.png');
+  }
+  .rewards-sidebar-list-I2 li:hover .rewards-icon-I2{
+    color: black;
+    background-image: url('data-2/badge_3914133.png');
+  }
+  .rewards-sidebar-list-I2 li:hover .store-icon-I2{
+    color: black;
+    background-image: url('data-2/shop_3916657.png');
+  }
+
+  .rewards-sidebar-list-I2 li a {
+    color: #676f7a;
+    font-size: larger;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .rewards-sidebar-list-I2 li a:hover {
+    color: black;
+  }
+
+  .head-rewards-I2{
+    position: absolute;
+    left: 300px;
+    top: 50px;
+  }
+  .head-rewards-I2 h1{
+    position: absolute;
+    width: 300px;
+    font-size: 28px;
+    color: black;
+  }
+  .head-rewards-I2 p{
+    position: absolute;
+    width: 600px;
+    top: 40px;
+    font-size: 18px;
+    color: #676f7a;
+    font-weight:500;
+  }
+  .your-badges-container-I2{
+    position: absolute;
+    top: 150px;
+    left: 300px;
+    width: 750px;
+    height: 550px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #d2d7dc;
+  }
+  .your-badges-container-I2 h1{
+    position: absolute;
+    left: 20px;
+    width: 300px;
+    color: black;
+    font-size: 22px;
+  }
+  .your-badges-container-I2 p{
+    position: absolute;
+    width: 600px;
+    top: 21px;
+    left: 20px;
+    font-size: 17px;
+    color: #676f7a;
+    font-weight:500;
+  }
+  .rewards-selection-I2{
+    position: absolute;
+    width: 700px;
+    height: 50px;
+    background-color: #f1f5f9;
+    top: 90px;
+    left: 25px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    border-radius: 10px;
+  }
+  .select-1-rewards-I2{
+    position: relative;
+    color: #676f7a;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    top: 4px;
+    padding-top: 7px;
+    padding-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.select-1-rewards-I2.selected {
+    position: relative;
+    background-color: #f8fafc; 
+    color: black;
+    border-radius: 10px;
+    height: 30px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  }
+.reward-name-1-rewards-I2{
+    position: absolute;
+    background-color: white;
+    width: 220px;
+    height: 170px;
+    top: 170px;
+    left: 30px;
+    border-radius: 10px;
+    border: 1px solid #d2d7dc;
+
+}  
+.reward-name-1-rewards-I2 h1{
+    position: absolute;
+    top: 80px;
+    left: 55px;
+    font-size: 17px;
+}
+.reward-name-1-rewards-I2 p{
+    position: absolute;
+    top: 105px;
+    left: 18px;
+    font-size: 13px;
+}
+.reward-name-2-rewards-I2{
+    position: absolute;
+    background-color: white;
+    width: 220px;
+    height: 170px;
+    top: 170px;
+    left: 265px;
+    border-radius: 10px;
+    border: 1px solid #d2d7dc;
+}  
+.reward-name-2-rewards-I2 h1{
+    position: absolute;
+    top: 80px;
+    left: 55px;
+    font-size: 17px;
+}
+.reward-name-2-rewards-I2 p{
+    position: absolute;
+    top: 105px;
+    left: 25px;
+    font-size: 13px;
+}
+.reward-name-3-rewards-I2{
+    position: absolute;
+    background-color: white;
+    width: 220px;
+    height: 170px;
+    top: 170px;
+    left: 500px;
+    border-radius: 10px;
+    border: 1px solid #d2d7dc;
+}  
+.reward-name-3-rewards-I2 h1{
+    position: absolute;
+    top: 80px;
+    left: 30px;
+    font-size: 17px;
+}
+.reward-name-3-rewards-I2 p{
+    position: absolute;
+    top: 105px;
+    left: 45px;
+    font-size: 13px;
+}
+.reward-name-1-ilus{
+    position: absolute;
+    left: 80px;
+    top: 25px;
+    height: 100%;
+    width: 25%;
+    background-image: url('data-2/lighting_1048896.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+.reward-name-2-ilus{
+    position: absolute;
+    left: 80px;
+    top: 25px;
+    height: 100%;
+    width: 25%;
+    background-image: url('data-2/trophy_5731911.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+.reward-name-3-ilus{
+    position: absolute;
+    left: 80px;
+    top: 25px;
+    height: 100%;
+    width: 25%;
+    background-image: url('data-2/fire_2439090.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+.reward-name-4-rewards-I2{
+    position: absolute;
+    background-color: white;
+    width: 220px;
+    height: 170px;
+    top: 355px;
+    left: 30px;
+    border-radius: 10px;
+    border: 1px solid #d2d7dc;
+}  
+.reward-name-4-rewards-I2 h1{
+    position: absolute;
+    top: 80px;
+    left: 35px;
+    font-size: 17px;
+}
+.reward-name-4-rewards-I2 p{
+    position: absolute;
+    top: 105px;
+    left: 33px;
+    font-size: 13px;
+}
+.reward-name-5-rewards-I2{
+    position: absolute;
+    background-color: white;
+    width: 220px;
+    height: 170px;
+    top: 355px;
+    left: 265px;
+    border-radius: 10px;
+    border: 1px solid #d2d7dc;
+}  
+.reward-name-5-rewards-I2 h1{
+    position: absolute;
+    top: 80px;
+    left: 55px;
+    font-size: 17px;
+}
+.reward-name-5-rewards-I2 p{
+    position: absolute;
+    top: 105px;
+    left: 70px;
+    font-size: 13px;
+}
+.reward-name-4-ilus{
+    position: absolute;
+    left: 80px;
+    top: 25px;
+    height: 100%;
+    width: 25%;
+    background-image: url('data-2/target_1317340.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+.reward-name-5-ilus{
+    position: absolute;
+    left: 80px;
+    top: 25px;
+    height: 100%;
+    width: 25%;
+    background-image: url('data-2/star_6704508.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+.reward-avail-1-I2{
+    position: absolute;
+    width: 350px;
+    height: 150px;
+    background-color: white;
+    top: 180px;
+    left: 20px;
+    border-radius: 10px;
+    border: 1px solid #d2d7dc
+}
+.reward-avail-1-I2 h1{
+    position: absolute;
+    font-size: 18px;
+    top: 20px;
+    left: 90px;
+}
+.reward-avail-1-I2 p{
+    position: absolute;
+    font-size: 15px;
+    top: 40px;
+    left: 90px;
+}
+.reward-avail-1-I2 h2{
+    position: absolute;
+    font-size: 11px;
+    top: 83px;
+    left: 90px;
+    color: black;
+    font-weight: lighter;
+}
+.reward-avail-1-I2 h3{
+    position: absolute;
+    font-size: 11px;
+    top: 83px;
+    left: 310px;
+    color: black;
+    font-weight: lighter;
+}
+.progress-reward-1-I2 {
+    position: absolute;
+    top: 110px;
+    left: 90px;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    height: 10px;
+    width: 70%;
+    overflow: hidden;
+  }
+.progress-fill-reward-1-I2{
+    position: absolute;
+    height: 100%;
+    background-color: #0080ff;
+    transition: width 0.6s ease-in-out;
+    border-radius: 8px;
+  }
+  .reward-avail-ilus-1-I2{
+    position: absolute;
+    left: 20px;
+    top: 27px;
+    height: 100%;
+    width: 15%;
+    background-image: url('data-2/brain_16770194.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+  }
+  .reward-avail-2-I2{
+    position: absolute;
+    width: 350px;
+    height: 150px;
+    background-color: white;
+    top: 180px;
+    left: 380px;
+    border-radius: 10px;
+    border: 1px solid #d2d7dc
+}
+.reward-avail-2-I2 h1{
+    position: absolute;
+    font-size: 18px;
+    top: 20px;
+    left: 90px;
+}
+.reward-avail-2-I2 p{
+    position: absolute;
+    font-size: 15px;
+    top: 40px;
+    left: 90px;
+}
+.reward-avail-2-I2 h2{
+    position: absolute;
+    font-size: 11px;
+    top: 83px;
+    left: 90px;
+    color: black;
+    font-weight: lighter;
+}
+.reward-avail-2-I2 h3{
+    position: absolute;
+    font-size: 11px;
+    top: 83px;
+    left: 310px;
+    color: black;
+    font-weight: lighter;
+}
+.progress-reward-2-I2 {
+    position: absolute;
+    top: 110px;
+    left: 90px;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    height: 10px;
+    width: 70%;
+    overflow: hidden;
+  }
+.progress-fill-reward-2-I2{
+    position: absolute;
+    height: 100%;
+    background-color: #0080ff;
+    transition: width 0.6s ease-in-out;
+    border-radius: 8px;
+  }
+  .reward-avail-ilus-2-I2{
+    position: absolute;
+    left: 20px;
+    top: 27px;
+    height: 100%;
+    width: 15%;
+    background-image: url('data-2/script_17138414.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+  }
+  .reward-avail-3-I2{
+    position: absolute;
+    width: 350px;
+    height: 150px;
+    background-color: white;
+    top: 350px;
+    left: 20px;
+    border-radius: 10px;
+    border: 1px solid #d2d7dc
+}
+.reward-avail-3-I2 h1{
+    position: absolute;
+    font-size: 18px;
+    top: 20px;
+    left: 90px;
+}
+.reward-avail-3-I2 p{
+    position: absolute;
+    font-size: 15px;
+    top: 40px;
+    left: 90px;
+}
+.reward-avail-3-I2 h2{
+    position: absolute;
+    font-size: 11px;
+    top: 83px;
+    left: 90px;
+    color: black;
+    font-weight: lighter;
+}
+.reward-avail-3-I2 h3{
+    position: absolute;
+    font-size: 11px;
+    top: 83px;
+    left: 310px;
+    color: black;
+    font-weight: lighter;
+}
+.progress-reward-3-I2 {
+    position: absolute;
+    top: 110px;
+    left: 90px;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    height: 10px;
+    width: 70%;
+    overflow: hidden;
+  }
+.progress-fill-reward-3-I2{
+    position: absolute;
+    height: 100%;
+    background-color: #0080ff;
+    transition: width 0.6s ease-in-out;
+    border-radius: 8px;
+  }
+  .reward-avail-ilus-3-I2{
+    position: absolute;
+    left: 20px;
+    top: 27px;
+    height: 100%;
+    width: 15%;
+    background-image: url('data-2/loyalty_17916512.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+  }
+  .reward-avail-4-I2{
+    position: absolute;
+    width: 350px;
+    height: 150px;
+    background-color: white;
+    top: 350px;
+    left: 380px;
+    border-radius: 10px;
+    border: 1px solid #d2d7dc
+}
+.reward-avail-4-I2 h1{
+    position: absolute;
+    font-size: 18px;
+    top: 20px;
+    left: 90px;
+}
+.reward-avail-4-I2 p{
+    position: absolute;
+    font-size: 15px;
+    top: 40px;
+    left: 90px;
+}
+.reward-avail-4-I2 h2{
+    position: absolute;
+    font-size: 11px;
+    top: 83px;
+    left: 90px;
+    color: black;
+    font-weight: lighter;
+}
+.reward-avail-4-I2 h3{
+    position: absolute;
+    font-size: 11px;
+    top: 83px;
+    left: 310px;
+    color: black;
+    font-weight: lighter;
+}
+.progress-reward-4-I2 {
+    position: absolute;
+    top: 110px;
+    left: 90px;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    height: 10px;
+    width: 70%;
+    overflow: hidden;
+  }
+.progress-fill-reward-4-I2{
+    position: absolute;
+    height: 100%;
+    background-color: #0080ff;
+    transition: width 0.6s ease-in-out;
+    border-radius: 8px;
+  }
+  .reward-avail-ilus-4-I2{
+    position: absolute;
+    left: 20px;
+    top: 27px;
+    height: 100%;
+    width: 15%;
+    background-image: url('data-2/30-days_12145927.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+  }
+  .coin-balance-container-rewards-I2{
+    position: absolute;
+    top: 150px;
+    left: 1075px;
+    background-color: white;
+    width: 375px;
+    height: 300px;
+    border-radius: 10px;
+    border: 1px solid #d2d7dc;
+  }
+  .coin-balance-container-rewards-I2 h1{
+    position: absolute;
+    font-size: 22px;
+    left: 20px;
+    color: black;
+  }
+  .coin-balance-container-rewards-I2 h2{
+    position: absolute;
+    font-size: 17px;
+    top: 23px;
+    left: 20px;
+    font-weight: lighter;
+    color: #676f7a;
+  }
+  .coins-head-rewards-I2{
+    position: absolute;
+    top: 80px;
+    left: 85px;
+    width: 200px;
+    height: 100px;
+    background-color: white;
+  }
+  .coins-head-rewards-I2 h1{
+    position: absolute;
+    font-size: 50px;
+    left: 40px;
+    top: -20px;
+    color: #ffaf42;
+  }
+  .coins-head-rewards-I2 h2{
+    position: absolute;
+    top: 55px;
+    left: 46px;
+    color: black;
+  }
+  .coins-visit-store-button-rewards-I2{
+    position: absolute;
+    top: 210px;
+    left: 35px;
+    background-color: #0080ff;
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .coins-visit-store-button-rewards-I2:hover{
+    background-color: #208bf6;
+  }
+  .coins-visit-store-button-rewards-I2 h1{
+    position: absolute;
+    left: 100px;
+    top: 3px;
+    font-size: 18px;
+    color: white;
+  }

@@ -90,7 +90,7 @@ function DashboardIntermediate() {
         {streakCount}
       </div>
       <img
-  src="data/notification_1144756.png"
+  src="data/bell_3917226.png"
   alt="Notifications"
   className="notification-icon"
   onClick={() => setShowNotification(prev => !prev)}

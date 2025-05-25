@@ -1,0 +1,781 @@
+.dashboard-container-I2 {
+    font-family: Arial, sans-serif;
+    background-color: #f8fafc;
+    width: 100vw;
+    height: 125vh;
+    position: absolute;
+    top: 0px;
+  }
+  
+  .sidebar-I2 {
+    position: absolute;
+    width: 275px;
+    height: 125vh;
+    background-color: #f8fafc;
+    color: black;
+    top: 0;
+    border-right: 1px solid #d2d7dc;
+  }
+  /* .selected-sidebar-option-I2 {
+    border: 2px solid #0287ff;
+    border-radius: 6px;
+    background-color: #e6f0ff;
+    font-size: 16px;
+    padding-right: 5px;
+
+  } */
+
+.divider-I2 {
+    border-top: 1px solid #d2d7dc;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+  }
+  .sidebar-divider-I2 {
+    border-top: 1px solid #d2d7dc;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+  }
+  
+.logo-I2{
+    position: absolute;
+    left: -15px;
+    top: -120px;
+    height: 100%;
+    width: 120%;
+    background-image: url('data/WhatsApp_Image_2025-05-07_at_19.27.01-removebg-preview.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+.dashboard-icon-I2{
+    position: absolute;
+    left: 55px;
+    top: 21px;
+    height: 100%;
+    width: 11%;
+    background-image: url('data-2/house-user.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+.take-exam-icon-I2{
+    position: absolute;
+    left: 55px;
+    top: 71px;
+    height: 100%;
+    width: 11%;
+    background-image: url('data-2/book-alt.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+.recent-exam-icon-I2{
+    position: absolute;
+    left: 55px;
+    top: 121px;
+    height: 100%;
+    width: 11%;
+    background-image: url('data-2/document.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+.analytics-icon-I2{
+    position: absolute;
+    left: 55px;
+    top: 169px;
+    height: 100%;
+    width: 11%;
+    background-image: url('data-2/chart-simple.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+.leaderboard-icon-I2{
+    position: absolute;
+    left: 55px;
+    top: 217px;
+    height: 100%;
+    width: 11%;
+    background-image: url('data-2/trophy.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+.community-icon-I2{
+    position: absolute;
+    left: 55px;
+    top: 267px;
+    height: 100%;
+    width: 11%;
+    background-image: url('data-2/messages.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+.rewards-icon-I2{
+    position: absolute;
+    left: 55px;
+    top: 314px;
+    height: 100%;
+    width: 11%;
+    background-image: url('data-2/badge.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+.store-icon-I2{
+    position: absolute;
+    left: 55px;
+    top: 364px;
+    height: 100%;
+    width: 11%;
+    background-image: url('data-2/shop.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+  .sidebar-list-I2 {
+    list-style: none;
+    position: absolute;
+    top: 60px;
+    color: black;
+  }
+  
+  .sidebar-list-I2 li {
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 60px;
+  }
+  
+  .sidebar-list-I2 li:hover .dashboard-icon-I2{
+    color: black;
+    background-image: url('data-2/house-user_11270109.png');
+  }
+  .sidebar-list-I2 li:hover .take-exam-icon-I2{
+    color: black;
+    background-image: url('data-2/book-alt_3914149.png');
+  }
+  .sidebar-list-I2 li:hover .recent-exam-icon-I2{
+    color: black;
+    background-image: url('data-2/document_3914193.png');
+  }
+  .sidebar-list-I2 li:hover .analytics-icon-I2{
+    color: black;
+    background-image: url('data-2/chart-simple_9795345.png');
+  }
+  .sidebar-list-I2 li:hover .leaderboard-icon-I2{
+    color: black;
+    background-image: url('data-2/trophy_3914267.png');
+  }
+  .sidebar-list-I2 li:hover .community-icon-I2{
+    color: black;
+    background-image: url('data-2/messages_9821623.png');
+  }
+  .sidebar-list-I2 li:hover .rewards-icon-I2{
+    color: black;
+    background-image: url('data-2/badge_3914133.png');
+  }
+  .sidebar-list-I2 li:hover .store-icon-I2{
+    color: black;
+    background-image: url('data-2/shop_3916657.png');
+  }
+
+  .sidebar-list-I2 li a {
+    color: #676f7a;
+    font-size: larger;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .sidebar-list-I2 li a:hover {
+    color: black;
+  }
+  
+  .main-content-I2 {
+    position: absolute;
+    top: 0;
+    background-color: #ecf0f1;
+  }
+  .head-hello-dashboard-I2{
+    position: absolute;
+    background-color: #f8fafc;
+    width: 600px;
+    height: 100px;
+    top: 60px;
+    left: 310px;
+  }
+  .head-hello-dashboard-I2 h1{
+    position: absolute;
+    font-size: 32px;
+    color: black;
+  }
+  .head-hello-dashboard-I2 h2{
+    position: absolute;
+    top: 45px;
+    font-size: 17px;
+    color: #676f7a;
+    font-weight: 500;
+  }
+  .button-take-exam-dashboard-I2{
+    position: absolute;
+    top: 85px;
+    left: 1250px;
+    background-color: #0080ff;
+    width: 150px;
+    height: 45px;
+    border-radius: 10px;
+  }
+  .button-take-exam-dashboard-I2:hover{
+    background-color: #2890f8;
+  }
+  .button-take-exam-dashboard-I2 h1{
+    position: absolute;
+    top: 4px;
+    left: 16px;
+    font-size: 15px;
+    color: white;
+  }
+
+  .exams-completed-card-I2{
+    position: absolute;
+    left: 310px;
+    top: 170px;
+    width: 230px;
+    height: 100px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #c5d7d9;
+  }
+  .exams-completed-card-I2 h1 {
+    font-size: 14px;
+    font-weight: 500;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    color: black;
+  }
+  
+  .exams-completed-card-I2 h2 {
+    font-size: 26px;
+    font-weight: bold;
+    position: absolute;
+    top: 27px;
+    left: 30px;
+    color: black;
+  }
+  
+  .exams-completed-card-I2 p {
+    font-size: 14px;
+    color: #35bc57;
+    line-height: 1.5;
+    position: absolute;
+    top: 75px;
+    left: 30px;
+  }
+.study-hours-card-I2{
+    position: absolute;
+    left: 600px;
+    top: 170px;
+    width: 230px;
+    height: 100px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #c5d7d9;
+  }
+.study-hours-card-I2 h1{
+    font-size: 14px;
+    font-weight: 500;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    color: black;
+}
+.study-hours-card-I2 h2{
+    font-size: 26px;
+    font-weight: bold;
+    position: absolute;
+    top: 27px;
+    left: 30px;
+    color: black;
+}
+.study-hours-card-I2 p{
+    font-size: 14px;
+    color: #35bc57;
+    line-height: 1.5;
+    position: absolute;
+    top: 75px;
+    left: 30px;
+}
+.overall-rank-card-I2{
+    position: absolute;
+    left: 890px;
+    top: 170px;
+    width: 230px;
+    height: 100px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #c5d7d9;
+}
+.overall-rank-card-I2 h1{
+    font-size: 14px;
+    font-weight: 500;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    color: black;
+}
+.overall-rank-card-I2 h2{
+    font-size: 26px;
+    font-weight: bold;
+    position: absolute;
+    top: 27px;
+    left: 30px;
+    color: black;
+}
+.overall-rank-card-I2 p{
+    font-size: 14px;
+    color: #35bc57;
+    line-height: 1.5;
+    position: absolute;
+    top: 75px;
+    left: 30px;
+}
+.badges-earned-card-I2{
+    position: absolute;
+    left: 1180px;
+    top: 170px;
+    width: 230px;
+    height: 100px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #c5d7d9;
+}
+.badges-earned-card-I2 h1{
+    font-size: 14px;
+    font-weight: 500;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    color: black;
+}
+.badges-earned-card-I2 h2{
+    font-size: 26px;
+    font-weight: bold;
+    position: absolute;
+    top: 27px;
+    left: 30px;
+    color: black;
+}
+
+.badges-earned-card-I2 p{
+    font-size: 14px;
+    color: #676f7a;
+    line-height: 1.5;
+    position: absolute;
+    top: 75px;
+    left: 30px;
+}
+.weekly-challenge-container-I2{
+    color: black;
+    background-color: #f8fafc;
+    width: 550px;
+    height: 600px;
+    position: absolute;
+    top: 310px;
+    left:320px;
+}
+.weekly-challenge-container-I2 h1{
+    font-size: 26px;
+}
+.weekly-challenge-card-1-I2{
+    background-color: white;
+    width: 500px;
+    height: 220px;
+    border-radius: 10px;
+    position: absolute;
+    left: 25px;
+    border: 1px solid #c5d7d9;
+}
+.weekly-challenge-card-1-I2 h1{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+.weekly-challenge-card-1-I2 h2{
+    position: absolute;
+    font-weight: 300;
+    top: 50px;
+    left: 20px;
+    color: #676f7a;
+    font-size: 15px;
+}
+.difficulty-weekly-card-1-I2{
+    position: absolute;
+    top: 31px;
+    left: 390px;
+    width: 60px;
+    height: 20px;
+    background-color: #fef9c3;
+    border-radius: 10px;
+    border: 1px solid #f4e75a;
+    color: #604218;
+}
+.difficulty-weekly-card-1-I2 h1{
+    font-size: 12px;
+    position: absolute;
+    top: -4.5px;
+    left: 7px;
+}
+.tag1-weekly-card-1-I2{
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    width: 60px;
+    height: 20px;
+    background-color: #f2f8ff;
+    border-radius: 10px;
+    border: 1px solid #d1d2d4;
+}
+.tag1-weekly-card-1-I2 h1{
+    font-size: 12px;
+    position: absolute;
+    top: -4.5px;
+    left: 7px;
+}
+.tag2-weekly-card-1-I2{
+    position: absolute;
+    top: 100px;
+    left: 85px;
+    width: 72px;
+    height: 20px;
+    background-color: #f2f8ff;
+    border-radius: 10px;
+    border: 1px solid #d1d2d4;
+}
+.tag2-weekly-card-1-I2 h1{
+    font-size: 12px;
+    position: absolute;
+    top: -4.5px;
+    left: 7px;
+}
+.tag3-weekly-card-1-I2{
+    position: absolute;
+    top: 100px;
+    left: 163px;
+    width: 50px;
+    height: 20px;
+    background-color: #f2f8ff;
+    border-radius: 10px;
+    border: 1px solid #d1d2d4;
+}
+.tag3-weekly-card-1-I2 h1{
+    font-size: 12px;
+    position: absolute;
+    top: -4.5px;
+    left: 7px;
+}
+.question-time-weekly-card-1-I2{
+    position: absolute;
+    width: 500px;
+    height: 25px;
+    background-color: white;
+    top: 125px;
+}
+.question-time-weekly-card-1-I2 h1{
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    font-size: 15px;
+}
+.question-time-weekly-card-1-I2 h2{
+    position: absolute;
+    font-weight: bold;
+    top: -5px;
+    left: 420px;
+    font-size: 15px;
+}
+.start-exam-button-I2{
+    position: absolute;
+    width: 450px;
+    height: 40px;
+    background-color: black;
+    top: 166px;
+    left: 24px;
+    border-radius: 10px;
+    color: white;
+    background-color: #0080ff;
+}
+.start-exam-button-I2 h1{
+    position: absolute;
+    font-size: 17px;
+    top: 0px;
+    left: 170px;
+}
+.start-exam-button-I2:hover{
+    color: white;
+    background-color: #2890f8;
+}
+.weekly-challenge-card-2-I2{
+    background-color: white;
+    width: 500px;
+    height: 220px;
+    border-radius: 10px;
+    position: absolute;
+    left: 25px;
+    top: 300px;
+    border: 1px solid #c5d7d9;
+}
+.weekly-challenge-card-2-I2 h1{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+.weekly-challenge-card-2-I2 h2{
+    position: absolute;
+    font-weight: 300;
+    top: 50px;
+    left: 20px;
+    color: #676f7a;
+    font-size: 15px;
+}
+.difficulty-weekly-card-2-I2{
+    position: absolute;
+    top: 31px;
+    left: 390px;
+    width: 60px;
+    height: 20px;
+    background-color: #fee2e2;
+    border-radius: 10px;
+    border: 1px solid #f29e9e;
+    color: #b64a47;
+}
+.difficulty-weekly-card-2-I2 h1{
+    font-size: 12px;
+    position: absolute;
+    top: -4.5px;
+    left: 16px;
+}
+.tag1-weekly-card-1-I2{
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    width: 60px;
+    height: 20px;
+    background-color: #f2f8ff;
+    border-radius: 10px;
+    border: 1px solid #d1d2d4;
+}
+.tag1-weekly-card-1-I2 h1{
+    font-size: 12px;
+    position: absolute;
+    top: -4.5px;
+    left: 7px;
+}
+.tag2-weekly-card-1-I2{
+    position: absolute;
+    top: 100px;
+    left: 85px;
+    width: 72px;
+    height: 20px;
+    background-color: #f2f8ff;
+    border-radius: 10px;
+    border: 1px solid #d1d2d4;
+}
+.tag2-weekly-card-1-I2 h1{
+    font-size: 12px;
+    position: absolute;
+    top: -4.5px;
+    left: 7px;
+}
+.tag3-weekly-card-2-I2{
+    position: absolute;
+    top: 100px;
+    left: 163px;
+    width: 57px;
+    height: 20px;
+    background-color: #f2f8ff;
+    border-radius: 10px;
+    border: 1px solid #d1d2d4;
+}
+.tag3-weekly-card-2-I2 h1{
+    font-size: 12px;
+    position: absolute;
+    top: -4.5px;
+    left: 7px;
+}
+.question-time-weekly-card-1-I2{
+    position: absolute;
+    width: 500px;
+    height: 25px;
+    background-color: white;
+    top: 125px;
+}
+.question-time-weekly-card-1-I2 h1{
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    font-size: 15px;
+}
+.question-time-weekly-card-1-I2 h2{
+    position: absolute;
+    font-weight: bold;
+    top: -5px;
+    left: 420px;
+    font-size: 15px;
+}
+.start-exam-button-I2{
+    position: absolute;
+    width: 450px;
+    height: 40px;
+    background-color: black;
+    top: 166px;
+    left: 24px;
+    border-radius: 10px;
+    color: white;
+    background-color: #0080ff;
+}
+.start-exam-button-I2 h1{
+    position: absolute;
+    font-size: 17px;
+    top: 0px;
+    left: 170px;
+}
+.start-exam-button-I2:hover{
+    color: white;
+    background-color: #2890f8;
+}
+.subject-performance-container-I2-dashboard h1{
+    position: absolute;
+    width: 300px;
+    background-color: #f8fafc;
+    font-size: 26px;
+    top: 0px;
+    left: 600px;
+}
+.subject-performance-card-I2-dashboard{
+    position: absolute;
+    left: 600px;
+    background-color: white;
+    width: 500px;
+    height: 400px;
+    border-radius: 10px;
+    border: 1px solid #c5d7d9;
+    color: black;
+}
+.subject-performance-card-I2-dashboard h1{
+    position: absolute;
+    color: #0080ff;
+    left: 215px;
+    top: 350px;
+    font-size: 15px;
+    width: 80px;
+    background-color: white;
+}
+.subject-bar {
+  margin: 30px 30px 0 30px;
+}
+
+.subject-bar span {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+  color: black;
+  font-size: 18px;
+}
+.subject-percent {
+    color: #676f7a;
+    display: flex;
+    font-size: 15px;
+    justify-content: flex-end;
+    margin-top: -30px;
+    padding-bottom: 10px;
+  }
+.progress-bar {
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  height: 16px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #0080ff;
+  width: 0%;
+  transition: width 0.6s ease-in-out;
+  border-radius: 8px;
+}
+.recent-exam-container-dashbaord-I2{
+    position: absolute;
+    top: 525px;
+    width: 1100px;
+    height: 200px;
+    background-color: #f8fafc;
+}
+.recent-exam-container-dashbaord-I2 h1{
+    font-size: 26px;
+}
+.recent-exam-card-dashbaord-I2{
+    position: absolute;
+    top: 55px;
+    background-color: white;
+    width: 1100px;
+    height: 115px;
+    border-radius: 10px;
+    border: 1px solid #c5d7d9;
+}
+.recent-exam-card-dashbaord-I2 h1{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+}
+.recent-exam-card-dashbaord-I2 h2{
+    position: absolute;
+    font-size: 15px;
+    top: 50px;
+    left: 20px;
+    font-weight: 500;
+    color: #676f7a;
+}
+.button-recent-exam-card-dashbaord-I2{
+    position: absolute;
+    background-color: #0080ff;
+    width: 150px;
+    height: 50px;
+    top: 30px;
+    right: 20px;
+    font-size: 24px;
+    border-radius: 10px;
+}
+.button-recent-exam-card-dashbaord-I2:hover{
+    background-color: #2890f8;
+}
+.button-recent-exam-card-dashbaord-I2 h1{
+    position: absolute;
+    width:150px;
+    top: 7px;
+    left: 47px;
+    font-size: 15px;
+    color: white;
+
+}
+.illustration-button-recent-exam-card-dashbaord-I2{
+    position: absolute;
+    left: 17px;
+    top: 14px;
+    height: 100%;
+    width: 15%;
+    background-image: url('data-2/document-2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+}

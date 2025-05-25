@@ -1,4 +1,3 @@
-
 import Dashboard from './Dashboard';
 import Features from './Features';
 import Home from './Home';
@@ -13,6 +12,12 @@ import RewardsIntermediate from './Intermediate/Rewards-Intermediate';
 import HistoryIntermediate from './Intermediate/History-Intermediate';
 import SignOutPage from './Signout';
 import StoreIntermediate from './Intermediate/Store-Intermediate';
+import Intermediate2Dashboard from './Intermediate-2/Intermediate-2-dashboard';
+import Intermediate2TakeExam from './Intermediate-2/Intermediate-2-take-exam';
+import Intermediate2Analytics from './Intermediate-2/Intermediate-2-analytics';
+import Intermediate2rewards from './Intermediate-2/Intermediate-2-rewards';
+import Intermediate2store from './Intermediate-2/Intermediate-2-store';
+import Intermediate2leaderboard from './Intermediate-2/Intermediate-2-leaderboard';
 
 function Pricing() {
   return <h1 className="page-content">Pricing Page</h1>;
@@ -36,7 +41,13 @@ function App() {
           <Route path="/rewards-intermediate" element={<RewardsIntermediate/>} />  
           <Route path="/history-intermediate" element={<HistoryIntermediate/>} /> 
           <Route path="/store-intermediate" element={<StoreIntermediate/>} /> 
-          <Route path="/signout" element={<SignOutPage/>} />             
+          <Route path="/signout" element={<SignOutPage/>} />        
+          <Route path="/intermediate-2-dashboard" element={<Intermediate2Dashboard/>} />  
+          <Route path="/I2-take-exam" element={<Intermediate2TakeExam/>}/>
+          <Route path="/I2-analytics" element={<Intermediate2Analytics/>}/>
+          <Route path="/I2-rewards" element={<Intermediate2rewards/>}/>
+          <Route path='/I2-store' element={<Intermediate2store/>}/>
+          <Route path='I2-leaderboard' element={<Intermediate2leaderboard/>}/>
 
         </Routes>
       </div>
