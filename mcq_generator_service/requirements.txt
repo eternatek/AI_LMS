@@ -1,0 +1,22 @@
+# FastAPI and Server
+fastapi>=0.109.0,<0.112.0
+uvicorn[standard]>=0.23.0,<0.28.0
+
+# Configuration
+python-dotenv>=1.0.0,<2.0.0
+
+# Core AI/LLM
+crewai>=0.30.0,<0.36.0  # Includes pydantic, langchain, etc.
+langchain-groq>=0.1.2,<0.2.0
+
+# Vector Store and Embeddings
+chromadb>=0.4.22,<0.5.0
+sentence-transformers>=2.2.2,<3.0.0 # For embeddings
+
+# httpx is used by chromadb and potentially other langchain components
+httpx>=0.25.0,<0.28.0
+
+# psycopg2-binary was listed in the initial thought process.
+# It's not directly used by this service's current Python code.
+# Remove if not needed, or keep if future direct DB interaction is planned.
+# psycopg2-binary>=2.9.5,<2.10.0
