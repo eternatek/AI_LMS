@@ -39,6 +39,7 @@ def generate_unique_mcqs(subject: str, topic: str, num_questions: int, difficult
             
             logger.info(f"Attempting to generate question #{len(generated_mcqs) + 1} (Retry {current_retry + 1})")
             result_json_str = crew.kickoff()
+            print("🧪 Raw LLM response:\n", result_json_str)
 
             try:
                 # The LLM might sometimes add markdown ```json ... ```, try to strip it

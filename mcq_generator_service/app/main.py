@@ -1,7 +1,10 @@
 # mcq_generator_service/app/main.py
-from fastapi import FastAPI, HTTPException, Body, status # Add status
-from .models import MCQGenerationRequest, MCQGenerationResponse, MCQ
+
+from fastapi import FastAPI, HTTPException, Body, status
+from .models import MCQGenerationRequest, MCQGenerationResponse
 from .crew import generate_unique_mcqs
+from .database import SessionLocal
+from .db_models import MCQDB
 import logging
 
 app = FastAPI(
@@ -20,7 +23,6 @@ async def health_check():
 
 @app.post("/generate-mcqs/", response_model=MCQGenerationResponse)
 async def create_mcqs(request: MCQGenerationRequest = Body(...)):
-    # ... (rest of your create_mcqs code) ...
     logger.info(f"Received request to generate MCQs: {request.model_dump()}")
     try:
         allowed_difficulties = ["Easy", "Medium", "Hard", "Difficult"]
@@ -35,12 +37,33 @@ async def create_mcqs(request: MCQGenerationRequest = Body(...)):
         )
         
         if not mcqs:
-             raise HTTPException(status_code=500, detail="Failed to generate any MCQs. The topic might be too niche or an LLM issue occurred.")
-        
+            raise HTTPException(status_code=500, detail="Failed to generate any MCQs. The topic might be too niche or an LLM issue occurred.")
+
+        # Save generated MCQs to the database
+        db = SessionLocal()
+        try:
+            for mcq in mcqs:
+                db_mcq = MCQDB(
+                    subject=request.subject,
+                    topic=request.topic,
+                    difficulty=request.difficulty,
+                    question=mcq.question,
+                    option_a=mcq.options["A"],
+                    option_b=mcq.options["B"],
+                    option_c=mcq.options["C"],
+                    option_d=mcq.options["D"],
+                    correct_answer=mcq.correct_answer,
+                    explanation=mcq.explanation
+                )
+                db.add(db_mcq)
+            db.commit()
+        finally:
+            db.close()
+
         if len(mcqs) < request.num_questions:
-            message = f"Successfully generated {len(mcqs)} MCQs, which is less than the requested {request.num_questions} due to uniqueness constraints or generation limits."
+            message = f"Successfully generated and saved {len(mcqs)} MCQs, which is less than the requested {request.num_questions} due to uniqueness constraints or generation limits."
         else:
-            message = "MCQs generated successfully."
+            message = "MCQs generated and saved successfully."
 
         return MCQGenerationResponse(questions=mcqs, message=message)
 
@@ -50,10 +73,7 @@ async def create_mcqs(request: MCQGenerationRequest = Body(...)):
         logger.error(f"Error generating MCQs: {e}", exc_info=True)
         raise HTTPException(status_code=500, detail=f"An internal error occurred: {str(e)}")
 
-# ... (if __name__ == "__main__": block if you have one) ...
-
+# Optional: Run the app directly for local testing
 if __name__ == "__main__":
     import uvicorn
-    # This is for running the service directly, e.g., for local testing.
-    # In a containerized setup, gunicorn or uvicorn would be run by the Docker CMD.
     uvicorn.run(app, host="0.0.0.0", port=8001)

@@ -48,7 +48,6 @@ function App() {
           <Route path="/I2-rewards" element={<Intermediate2rewards/>}/>
           <Route path='/I2-store' element={<Intermediate2store/>}/>
           <Route path='I2-leaderboard' element={<Intermediate2leaderboard/>}/>
-
         </Routes>
       </div>
     </Router>
